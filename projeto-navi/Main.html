@@ -11,7 +11,8 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <nav class='navbar navbar-expand-lg bg-purple' id='nav'> 
+
+        <nav class='navbar navbar-expand-lg bg-purple ps-5' id='nav'> 
             <div class='container-fluid'> 
                 <a class='navbar-brand'> 
                     <img src='src/images/logo-hackaton.png' class='w-75 img-fluid'>
@@ -19,33 +20,32 @@
                 <button class='navbar-toggler' type='button'  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"> </span>
                 </button>
-                <div class='collapse navbar-collapse'> 
+                <div class='collapse navbar-collapse justify-content-center'> 
                     <ul class='navbar-nav'> 
-                        <li class='nav-item'> 
-                            <a class='nav-link' href="#"> OBJETIVOS </a>
+                        <li class='nav-item pe-4'> 
+                            <a class='nav-link disabled text-white' href=""> OBJETIVOS </a>
                         </li>
-                        <li class='nav-item'> 
-                            <a class='nav-link' href='#'> O EVENTO </a>
+                        <li class='nav-item pe-4 ps-4'> 
+                            <a class='nav-link disabled text-white' href='#'> O EVENTO </a>
                         </li>
-                        <li class='nav-item'> 
-                            <a class='nav-link' href='#'> INSCRIÇÕES </a>
+                        <li class='nav-item pe-4 ps-4'> 
+                            <a class='nav-link disabled text-white' href='#'> INSCRIÇÕES </a>
                         </li>
-                        <li class='nav-item'> 
-                            <a class='nav-link' href='#'> INFORMAÇÕES </a>
+                        <li class='nav-item pe-4 ps-4'> 
+                            <a class='nav-link disabled text-white' href='#'> INFORMAÇÕES </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <section class='container-fluid position-relative bg-purple pt-3 pb-3' id='sectionOne'> 
+        <section class='container-fluid bg-purple position-relative pt-3 pb-3' id='sectionOne'> 
 
-            <div class='container pt-5 pb-5'> 
+            <img src='src/images/rocket1.png' class='img-fluid' id='rocketImage'>
+            
+            
 
-                <img src='src/images/rocket1.png' class='position-absolute img-fluid'>
-                <img src='src/images/Computer1.png' class='position-absolute end-0 img-fluid'>
-                <img src='src/images/rocket2.png' class='position-absolute start-50 img-fluid'>
-                <img src='src/images/rocket3.png' class='position-absolute start-0 img-fluid'>
+            <div class='container pt-5 pb-5' id='sectionOneContainer'> 
 
                 <div class='row justify-content-center'> 
                     <div class='col-6 text-center'> 
@@ -54,26 +54,28 @@
                         <p class='text-white fst-italic'> Codificar é preciso! </p> 
                     </div> 
                 </div>
+
                 <div class='row justify-content-center'>
                     <div class='col-1'> <i class="bi bi-chevron-down" style='font-size: 2rem; color: white'></i> </div> 
-                    <div class="w-100"></div> 
                     <div class='col-1'> <i class="bi bi-chevron-down" style='font-size: 2rem; color: white'></i></div>
-                    <div class="w-100"></div>  
                     <div class='col-1'> <i class="bi bi-chevron-down" style='font-size: 2rem; color: white'></i> </div>  
                 </div>
+                
             </div> 
 
-            <div class='container'> 
+            <div class='container' id='codeWhite'> 
                 <div class='row justify-content-center'>
-                    <div class='col-6 p-4 bg-white'>
+                    <div class='col-6 p-5 bg-white'>
                         <h2 class='pb-3' id=''> CODIFICAR É PRECISO! </h2>
                         <p class='text-justify pb-3'> O objetivo do nosso Hackathon Causa Básica do Óbito é construir soluções 
                             inovadoras que auxiliem no registro das causas básica de óbitos no Brasil, 
                             que compõem o Sistema Seletor de Causa Básica de Óbito.
                         </p>
-                        <button type='button' class='btn btn-warning text-white'> 
-                            QUERO PARTICIPAR!
-                        </button>
+                        <div class='row justify-content-center'>
+                            <button type='button' class='col-5 btn btn-warning text-white'> 
+                                QUERO PARTICIPAR!
+                            </button>
+                        </div>
                     </div>
                 </div> 
             </div>

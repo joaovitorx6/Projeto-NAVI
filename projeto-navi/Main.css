@@ -1,9 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap');
+
 #nav{
     /* background-color: #0D0030; */
 }
 
 #sectionOne{
     background-image: url(src/images/background.png);
-    background-position: center;
-    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat; 
+    /* background-size: auto; */
+    /* position: relative; */
 }
+
+#sectionOneContainer{
+    z-index: 4;
+}
+
+#computerImage{
+    position: absolute;
+    top: 60px;
+    left: 700px;
+    z-index: 1
+}
+
+#computerImageShadow{
+    position: absolute;
+    top: 0;
+    left: 700px;
+    width: 600px;
+    z-index: 0;
+}
+
+
+#rocketImage{
+    position: absolute;
+    z-index:1;
+}
+
+#rocketImageShadow{
+    position: absolute;
+    z-index: 0;
+    left: 0;
+}
+
+#rocketImageCenter{
+    position: absolute;
+    left: 620px;
+    z-index: 1;
+}
+
+#codeWhite{
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
