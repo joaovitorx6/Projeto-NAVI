@@ -1,56 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap');
 
-#nav{
-    /* background-color: #0D0030; */
+h1,h2,h3,h4,h4{
+    font-family: 'Lexend Exa', sans-serif;
 }
+
+#nav{
+    box-shadow: ;
+}
+
+#nav li{
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 0.8rem;
+}
+
 
 #sectionOne{
     background-image: url(src/images/background.png);
     background-position: top;
     background-repeat: no-repeat; 
-    /* background-size: auto; */
-    /* position: relative; */
 }
 
 #sectionOneContainer{
-    z-index: 4;
+    margin-top: 10%;
+    z-index: 100;
+}
+
+#sectionOneContainer #titleHackaton{
+    font-size: 5rem;
+    font-family: 'Lexend Exa', sans-serif;
 }
 
 #computerImage{
-    position: absolute;
-    top: 60px;
-    left: 700px;
-    z-index: 1
-}
+    top: 5%;
+    left: 60%;
+    z-index: 2;
+} 
 
 #computerImageShadow{
-    position: absolute;
-    top: 0;
-    left: 700px;
-    width: 600px;
-    z-index: 0;
-}
-
+    max-width: 550px;
+    top: 0px;
+    right: 0px;
+} 
 
 #rocketImage{
-    position: absolute;
-    z-index:1;
-}
-
-#rocketImageShadow{
-    position: absolute;
-    z-index: 0;
-    left: 0;
-}
+    max-width: 400px;
+    left: 3%;
+    z-index: 1;
+} 
 
 #rocketImageCenter{
-    position: absolute;
-    left: 620px;
-    z-index: 1;
+    left: 50%; 
+    top: 10%; 
+    z-index: 0;
 }
 
-#codeWhite{
-    margin-top: 25%;
-    margin-bottom: 25%;
+#codeBlock{
+    margin-top: 30%;
+    margin-bottom: 20%;
 }
 
+#seta{ 
+   left: 50%;
+   opacity: 0.2;
+}
+
+#seta2{ 
+    top: 20px;
+    left: 50%;
+    opacity: 0.5;
+ }
+
+ #seta3{ 
+    top: 40px;
+    left: 50%;
+ }
+
+ #sectionTwo{
+     background-color: #1F0A57;
+ }

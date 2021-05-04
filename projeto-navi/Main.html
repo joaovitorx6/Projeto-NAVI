@@ -41,31 +41,31 @@
 
         <section class='container-fluid bg-purple position-relative pt-3 pb-3' id='sectionOne'> 
 
-            <img src='src/images/rocket1.png' class='img-fluid' id='rocketImage'>
-            
-            
+            <img src='src/images/rocket1.png' class='img-fluid position-absolute' id='rocketImage'>
+            <img src='src/images/rocket3.png' class='img-fluid position-absolute start-0' id='rocketImageShadow'>
+            <img src='src/images/Computer1.png' class='img-fluid position-absolute' id='computerImage'> 
+            <img src='src/images/Computer3.png' class='img-fluid position-absolute' id='computerImageShadow'> 
 
-            <div class='container pt-5 pb-5' id='sectionOneContainer'> 
+            <div class='container position-relative' id='sectionOneContainer'> 
 
-                <div class='row justify-content-center'> 
-                    <div class='col-6 text-center'> 
-                        <h1 class='text-white'> HACKATHON </h1> 
-                        <h5 class=text-info> CAUSA BÁSICA DO ÓBITO </h5>
-                        <p class='text-white fst-italic'> Codificar é preciso! </p> 
-                    </div> 
+                <img src='src/images/rocket2.png' class='img-fluid position-absolute' id='rocketImageCenter'>
+                <div class='text-center'> 
+                        <p class='text-white' id='titleHackaton'> HACKATHON </p> 
+                        <h4 class=text-info> CAUSA BÁSICA DO ÓBITO </h4>
+                        <p class='text-white fs-5 fst-italic'> Codificar é preciso! </p> 
                 </div>
 
-                <div class='row justify-content-center'>
-                    <div class='col-1'> <i class="bi bi-chevron-down" style='font-size: 2rem; color: white'></i> </div> 
-                    <div class='col-1'> <i class="bi bi-chevron-down" style='font-size: 2rem; color: white'></i></div>
-                    <div class='col-1'> <i class="bi bi-chevron-down" style='font-size: 2rem; color: white'></i> </div>  
-                </div>
-                
             </div> 
 
-            <div class='container' id='codeWhite'> 
+            <div class='container mt-5 position-relative' id='setas'>
+                <div class='position-absolute' id='seta'> <i class="bi bi-chevron-down" style='font-size: 4rem; color: white'></i> </div> 
+                <div class='position-absolute' id='seta2'> <i class="bi bi-chevron-down" style='font-size: 4rem; color: white'></i></div>
+                <div class='position-absolute' id='seta3'> <i class="bi bi-chevron-down" style='font-size: 4rem; color: white'></i> </div>  
+            </div>
+
+            <div class='container' id='codeBlock'> 
                 <div class='row justify-content-center'>
-                    <div class='col-6 p-5 bg-white'>
+                    <div class='col-8 p-5 bg-white'>
                         <h2 class='pb-3' id=''> CODIFICAR É PRECISO! </h2>
                         <p class='text-justify pb-3'> O objetivo do nosso Hackathon Causa Básica do Óbito é construir soluções 
                             inovadoras que auxiliem no registro das causas básica de óbitos no Brasil, 
@@ -82,28 +82,28 @@
 
         </section>
 
-        <section class='container-fluid p-5 bg-purple' id='sectionTwo'> 
+        <section class='container-fluid p-5' id='sectionTwo'> 
 
-            <div class='container pt-5'> 
+            <div class='container p-5'> 
 
-                <h1 class='pl-3 text-white'> OBJETIVOS </h1>
+                <h1 class='pl-3 pb-5 text-white'> OBJETIVOS </h1>
 
                 <div class='row justify-content-center'>
                     <div class='col-4 p-4'> 
-                        <h4 class='pb-2 text-white'> Fomento à inovação </h4> 
+                        <h4 class='pb-3 text-white'> Fomento à inovação </h4> 
                         <p class='text-white'> Desenvolver uma cultura de inovação e criação de novas ideias 
                             para solucionar problemas presentes em nossa sociedade
                         </p>
                     </div>
                     <div class='col-4 p-4'> 
-                        <img src='src/images/homework.png' class='w-25 img-fluid'>
-                        <h4 class='pb-2 text-white'> Fonte de aprendizado </h4>
+                        <img src='src/images/homework.png' class='pb-2 w-25 img-fluid'>
+                        <h4 class='pb-3 text-white'> Fonte de aprendizado </h4>
                         <p class='text-white'> Oportunidade de aprendizado para todos os participantes, pois cada 
                             atividade estimula a criatividade e se transforma em conhecimento
                         </p> 
                     </div>
                     <div class='col-4 p-4'> 
-                        <h4 class='pb-2 text-white'> Aceleração de ideias </h4> 
+                        <h4 class='pb-3 text-white'> Aceleração de ideias </h4> 
                         <p class='text-white'> Surgimento de ideias incríveis que poderão se tornarem projetos de grande 
                             impacto na vida de muitas pessoas direta ou indiretamente.
                         <p>
@@ -112,22 +112,22 @@
                     <div class="w-100"></div>
 
                     <div class='col-4 p-4'> 
-                        <img src='src/images/Group.png' class='w-25 img-fluid'>
-                        <h4 class='pb-2 text-white'> Trabalho em equipe </h4> 
+                        <img src='src/images/Group.png' class='pb-2 w-25 img-fluid'>
+                        <h4 class='pb-3 text-white'> Trabalho em equipe </h4> 
                         <p class='text-white'> Interação entre participantes de multidisciplinas, 
                             que poderão trabalhar juntos e aprenderem coisas novas
                         </p>
                     </div>
                     <div class='col-4 p-4'> 
-                        <img src='src/images/Desafio.png' class='w-25 img-fluid'>
-                        <h4 class='pb-2 text-white'> Desafio </h4> 
+                        <img src='src/images/Desafio.png' class='pb-2 w-25 img-fluid'>
+                        <h4 class='pb-3 text-white'> Desafio </h4> 
                         <p class='text-white'> Promover desafios como esse, faz com que jovens e adultos se desafiem 
                             e possam até mesmo dar o próximo passo em suas carreiras
                         </p>
                     </div>
                     <div class='col-4 p-4'> 
-                        <img src='src/images/Implantacao.png' class='w-25 img-fluid'>
-                        <h4 class='pb-2 text-white'> Implementação de projetos </h4> 
+                        <img src='src/images/Implantacao.png' class='pb-2 w-25 img-fluid'>
+                        <h4 class='pb-4 text-white'> Implementação de projetos </h4> 
                         <p class='text-white'> Incentivar a implementação de projetos que estão guardados ou 
                             que precisam ser melhorados
                         </p>
