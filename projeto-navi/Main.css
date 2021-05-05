@@ -22,6 +22,7 @@ h3,h4, h5, h6{
     background-image: url(src/images/background.png);
     background-position: top;
     background-repeat: no-repeat; 
+    z-index: 4;
 }
 
 #sectionOneContainer{
@@ -36,18 +37,16 @@ h3,h4, h5, h6{
 
 #computerImage{
     top: 5%;
-    left: 60%;
+    left: 55%; 
     z-index: 2;
 } 
 
 #computerImageShadow{
-    max-width: 623px;
     top: 0px;
     right: 0px;
 } 
 
 #rocketImage{
-    left: 3%;
     z-index: 1;
 } 
 
@@ -56,8 +55,8 @@ h3,h4, h5, h6{
 }
 
 #rocketImageCenter{
-    left: 50%; 
-    top: 10%; 
+    left: 45%;  
+    top: 5%;  
     z-index: 0;
 }
 
@@ -67,19 +66,19 @@ h3,h4, h5, h6{
 }
 
 #seta{ 
-   left: 50%;
+   left: 45%;
    opacity: 0.2;
 }
 
 #seta2{ 
     top: 20px;
-    left: 50%;
+    left: 45%;
     opacity: 0.5;
  }
 
  #seta3{ 
     top: 40px;
-    left: 50%;
+    left: 45%;
  }
 
  #sectionTwo{
