@@ -37,7 +37,6 @@ h3,h4, h5, h6{
 
 #computerImage{
     top: 5%;
-    left: 55%; 
     z-index: 2;
 } 
 
@@ -86,24 +85,24 @@ h3,h4, h5, h6{
  }
 
  #computerSectionThree{
-     width: 500px;
-     top: 40%;
+        top: 50%;
  }
 
  #sectionFour{
     background-image: url(src/images/background.png);
     background-position: bottom;
     background-repeat: no-repeat; 
-    padding-bottom: 50%;
-    padding-top: 15%;
- }
- #sectionFour .container{
+    padding-bottom: 58%;
+    padding-top: 10%;
  }
 
+ #sectionFour .container{
+ }
+/* 
  #premiosImage{
     left: 20%;
     top: 55%;
- }
+ } */
 
  #sectionSix{
      background-color: #F5F5F5;
@@ -115,21 +114,18 @@ h3,h4, h5, h6{
      padding-top: 10%;
  }
 
- @media (max-width: 768px) { 
+ /* @media (max-width: 768px) { 
     #computerImage{
-        width: 218px;
+        width: 200px;
     }
     #computerImageShadow{
-        width: 352px;
+        width: 300px;
     }
     #rocketImage{
-        width: 240px;
+        width: 200px;
         left:0;
     }
     #rocketImageShadow{
-        width: 369px;
+        width: 300px;
     }
-    #premiosImage{
-        width: 314px;
-    }
-}
+} */

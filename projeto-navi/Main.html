@@ -20,7 +20,7 @@
                 <button class='navbar-toggler' type='button'  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"> </span>
                 </button>
-                <div class='collapse navbar-collapse justify-content-center'> 
+                <div class='collapse navbar-collapse justify-content-center' id="navbarSupportedContent"> 
                     <ul class='navbar-nav'> 
                         <li class='nav-item pe-4'> 
                             <a class='nav-link disabled text-white' href=""> OBJETIVOS </a>
@@ -40,12 +40,16 @@
         </nav>
 
         <section class='container-fluid position-relative bg-purple pt-3 pb-3' id='sectionOne'> 
-            
-            <img src='src/images/rocket1.png' class='img-fluid position-absolute' id='rocketImage'>
-            <img src='src/images/rocket3.png' class='img-fluid position-absolute' id='rocketImageShadow'>
 
-            <img src='src/images/Computer1.png' class='img-fluid position-absolute' id='computerImage'> 
-            <img src='src/images/Computer3.png' class='img-fluid position-absolute' id='computerImageShadow'>
+            <div class='d-flex justify-content-start'>
+                <img src='src/images/rocket1.png' class='img-fluid position-absolute' id='rocketImage'>
+                <img src='src/images/rocket3.png' class='img-fluid position-absolute' id='rocketImageShadow'>
+            </div>
+            
+            <div class='d-flex justify-content-end'>
+                <img src='src/images/Computer1.png' class='img-fluid position-absolute' id='computerImage'> 
+                <img src='src/images/Computer3.png' class='img-fluid position-absolute' id='computerImageShadow'>
+            </div>
 
             <div class='container position-relative' id='sectionOneContainer'> 
 
@@ -61,8 +65,8 @@
 
             </div> 
 
-            <div class='row mt-5 position-relative' id='setas'>
-                <div class='col'>
+            <div class='row position-relative' id='setas'>
+                <div class='col-2'>
                     <div class='position-absolute' id='seta'> <i class="bi bi-chevron-down" style='font-size: 4rem; color: white'></i> </div> 
                     <div class='position-absolute' id='seta2'> <i class="bi bi-chevron-down" style='font-size: 4rem; color: white'></i></div>
                     <div class='position-absolute' id='seta3'> <i class="bi bi-chevron-down" style='font-size: 4rem; color: white'></i> </div>  
@@ -143,15 +147,26 @@
             </div> 
         </section> 
 
-        <section class='container-fluid position-relative p-5 bg-warning' id='sectionThree'>
+        <section class='container-fluid position-relative p-5' id='sectionThree'>
+            
+            <div class='d-flex w-100'>
+                <img src='src/images/Computer2.png' class='img-fluid position-absolute end-0 w-50' id='computerSectionThree'> 
+            </div>
+            
+            <!-- <div class="position-relative m-4">
+                <div class="progress" style="height: 5px;">
+                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;"></button>
+                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;"></button>
+                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;"></button>
+            </div>
+             -->
+            <div class='row justify-content-start p-5'>
 
-            <div class='container bg-success row justify-content-start p-5'>
+                <h1 class='pb-5'> FASES DO EVENTO </h1>
 
-                <h1 class='pb-5'> FASES DO EVENTO </h1> 
-
-                <img src='src/images/Computer2.png' class='position-absolute end-0 img-fluid' id='computerSectionThree'> 
-
-                <div class='ps-5 pt-5 pb-5 col-6 border-start border-dark border-4'>
+                <div class='ps-5 pt-5 pb-5 col-6'>
                     <h3> PERÍODO DE INSCRIÇÕES </h3>
                     <p class='fs-5 fw-bolder text-info'> 02/11/2020 a 09/11/2020 </p>
                     <p>
@@ -170,11 +185,7 @@
 
                 <div class='w-100'> </div>
 
-                <div class='ps-5 pb-5 pt-5 col-6 mt-5 border-start border-dark border-4 position-relative'>
-
-                    <div class='w-auto p-3 border border-4 border-dark rounded-circle position-absolute top-0 start-0'> 
-                        <button type='button' class='btn w-25 h-25 rounded-circle position-absolute bg-info border-info'> </button>
-                    </div>
+                <div class='ps-5 pb-5 pt-5 col-6 mt-5 position-relative'>
 
                     <h3> LIVE DE ABERTURA </h3>
                     <p class='fs-5 fw-bolder text-info'> 14/11/2020 às 20h </p>
@@ -185,7 +196,7 @@
 
                 <div class='w-100'> </div>
 
-                <div class='ps-5 pb-5 pt-5 col-6 border-start border-dark border-4'>
+                <div class='ps-5 pb-5 pt-5 col-6'>
                     <h3> Etapa 1: Brainstorming e Ideação </h3>
                     <p class='fs-5 fw-bolder text-info'> 14/11/2020 a 19/11/2020 </p>
                     <p>
@@ -197,7 +208,7 @@
 
                 <div class='w-100'> </div>
 
-                <div class='ps-5 pb-5 pt-5 col-6 border-start border-dark border-4'>
+                <div class='ps-5 pb-5 pt-5 col-6'>
                     <h3> Resultado da Etapa 1: Brainstorming e Ideação </h3>
                     <p class='fs-5 fw-bolder text-info'> 23/11/2020 </p>
                     <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> RESULTADO ETAPA 1 </a>
@@ -205,7 +216,7 @@
 
                 <div class='w-100'> </div>
 
-                <div class='ps-5 pb-5 pt-5 col-6  border-start border-dark border-4'>
+                <div class='ps-5 pb-5 pt-5 col-6'>
                     <h3> Etapa 2: Prototipação da solução </h3>
                     <p class='fs-5 fw-bolder text-info'> 21/11/2020 a 26/11/2020 </p>
                     <p>
@@ -218,7 +229,7 @@
 
                 <div class='w-100'> </div>
 
-                <div class='ps-5 pb-5 pt-5 col-6 border-start border-dark border-4'>
+                <div class='ps-5 pb-5 pt-5 col-6'>
                     <h3> Resultado da Etapa 2: Prototipação da solução </h3>
                     <p class='fs-5 fw-bolder text-info'> 28/11/2020 </p>
                     <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> RESULTADO ETAPA 2 </a>
@@ -226,7 +237,7 @@
 
                 <div class='w-100'> </div>
 
-                <div class='ps-5 pb-5 pt-5 col-6 border-start border-dark border-4'>
+                <div class='ps-5 pb-5 pt-5 col-6'>
                     <h3> Etapa Final: Apresentação do MVP e Premiação </h3>
                     <p class='fs-5 fw-bolder text-info'> 30/11/2020 </p>
                     <p>
@@ -243,32 +254,39 @@
         <section class='bg-purple' id='sectionFour'> 
             
             <div class='container position-relative'>
-                <h1 class='pb-5'> PRÊMIOS INCRÍVEIS </h1>
-                <img src='src/images/premios.png' class='position-absolute img-fluid' id='premiosImage'>
-                <div class='row justify-content-center bg-warning pb-5 pt-5'>
-                    <div class='col-2'>
-                        <h3> 1º Lugar </h3>
-                        <h4> R$ 4.000,00 </h4>
-                    </div>  
+
+                <h1 class='pb-5 text-white'> PRÊMIOS INCRÍVEIS </h1>
+
+                <div class='d-flex justify-content-center'> 
+                    <img src='src/images/premios.png' class='position-absolute img-fluid' id='computerSectionThree'>
                 </div>
 
-                <div class='row justify-content-center bg-warning pb-5 pt-5'>
+                <div class='row justify-content-center'>
 
-                    <div class='col-2'>
-                        <h3> 3º Lugar </h3>
-                        <h4> R$ 1.000,00 </h4>
+                    <div class='col text-center'>
+                        <h3 class='text-white'> 1º Lugar </h3>
+                        <h4> R$ 4.000,00 </h4>
                     </div>  
+            
+                </div>
 
-                    <div class='col-3'>
-                    </div>
+                <div class='row justify-content-center' style='margin-top: 15%;'>
 
-                    <div class='col-2'>
-                        <h3> 2º Lugar </h3>
+                    <div class='col-6 text-center'>
+                        <h3 class='text-white'> 3º Lugar </h3>
+                        <h4> R$ 1.000,00 </h4>
+                    </div> 
+                    
+
+                    <div class='col-6 text-center'>
+                        <h3 class='text-white'> 2º Lugar </h3>
                         <h4> R$ 2.000,00 </h4>
                     </div>  
+
                 </div>
 
             </div>
+
         </section>
 
         <section class='p-5'> 
@@ -393,19 +411,20 @@
         <footer id='footer'>
             <div class='container pb-5'>
                 <div class='row justify-content-center'>
-                    <div class='col-md-2 pb-5'>
+                    <div class='col-md pb-5'>
                         <img src='src/images/logonavi.png' class='img-fluid'>
                     </div>
-                    <div class='col-md-2 pb-5'>
+                    <div class='col-md pb-5'>
                         <img src='src/images/logofuncern.png' class='img-fluid'>
                     </div>
-                    <div class='col-md-2 pb-5'>
+                    <div class='col-md pb-5'>
                         <img src='src/images/logocbo.png' class='img-fluid'>
                     </div>
                 </div>
             </div>
-            <p class='pt-5 text-center text-white'> © 2020 Núcleo Avançado de Inovação Tecnológica, 
-                Todos os Direitos Reservados </p> 
+            <p class='pt-5 text-center text-white'> 
+                © 2020 Núcleo Avançado de Inovação Tecnológica, Todos os Direitos Reservados 
+            </p> 
         </footer> 
 
     </body>
