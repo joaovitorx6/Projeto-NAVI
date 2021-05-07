@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap');
 
-h1,h2,h3,h4,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6{
     font-family: 'Lexend Exa', sans-serif;
 }
 
-h3,h4, h5, h6{
+h3,h4,h5,h6{
     color: #3C9AE4;
-}
-
-#nav{
-    box-shadow: ;
 }
 
 #nav li{
@@ -17,20 +19,20 @@ h3,h4, h5, h6{
     font-size: 0.8rem;
 }
 
+/* Seção do titulo */
 
-#sectionOne{
+#sectionTitle{
     background-image: url(src/images/background.png);
     background-position: top;
     background-repeat: no-repeat; 
-    z-index: 4;
 }
 
-#sectionOneContainer{
+#sectionTitleBox{
     margin-top: 10%;
     z-index: 100;
 }
 
-#sectionOneContainer #titleHackaton{
+#titleHackaton{
     font-size: 5rem;
     font-family: 'Lexend Exa', sans-serif;
 }
@@ -59,7 +61,7 @@ h3,h4, h5, h6{
     z-index: 0;
 }
 
-#codeBlock{
+#codeBox{
     margin-top: 30%;
     margin-bottom: 20%;
 }
@@ -80,15 +82,19 @@ h3,h4, h5, h6{
     left: 45%;
  }
 
- #sectionTwo{
+ /* Seção 2 - Objetivos */
+
+ #sectionObjective{
      background-color: #1F0A57;
  }
 
- #computerSectionThree{
-        top: 50%;
+ /* Seção 3 - Fases do evento*/
+ #computerSectionFases{
+        top: 30%;
  }
 
- #sectionFour{
+ /* Seção 4 - Premiação */
+ #sectionPremios{
     background-image: url(src/images/background.png);
     background-position: bottom;
     background-repeat: no-repeat; 
@@ -96,18 +102,16 @@ h3,h4, h5, h6{
     padding-top: 10%;
  }
 
- #sectionFour .container{
+ #computerSectionPremios{
+    top: 50%;
  }
-/* 
- #premiosImage{
-    left: 20%;
-    top: 55%;
- } */
 
- #sectionSix{
+ /* Seção 6 - Comissao Organizadora*/
+ #sectionComissao{
      background-color: #F5F5F5;
  }
 
+ /* Rodapé */
  #footer{
      background-color: #0D0030;
      padding-bottom: 2%;
