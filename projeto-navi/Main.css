@@ -10,10 +10,6 @@ h6{
     font-family: 'Lexend Exa', sans-serif;
 }
 
-h3,h4,h5,h6{
-    color: #3C9AE4;
-}
-
 #nav li{
     font-family: 'Lexend Exa', sans-serif;
     font-size: 0.8rem;
@@ -46,53 +42,40 @@ h3,h4,h5,h6{
     top: 0px;
     right: 0px;
 } 
-
 #rocketImage{
     z-index: 1;
 } 
-
 #rocketImageShadow{
     left: 0;
 }
-
 #rocketImageCenter{
     left: 45%;  
-    top: 5%;  
+    top: 10%;  
     z-index: 0;
 }
-
 #codeBox{
     margin-top: 30%;
     margin-bottom: 20%;
 }
-
 #seta{ 
    left: 45%;
    opacity: 0.2;
 }
-
 #seta2{ 
     top: 20px;
     left: 45%;
     opacity: 0.5;
  }
-
  #seta3{ 
     top: 40px;
     left: 45%;
  }
-
- /* Seção 2 - Objetivos */
-
- #sectionObjective{
-     background-color: #1F0A57;
- }
-
  /* Seção 3 - Fases do evento*/
+  
  #computerSectionFases{
         top: 30%;
  }
-
+  
  /* Seção 4 - Premiação */
  #sectionPremios{
     background-image: url(src/images/background.png);
@@ -101,35 +84,20 @@ h3,h4,h5,h6{
     padding-bottom: 58%;
     padding-top: 10%;
  }
-
  #computerSectionPremios{
     top: 50%;
  }
-
- /* Seção 6 - Comissao Organizadora*/
- #sectionComissao{
-     background-color: #F5F5F5;
- }
-
  /* Rodapé */
  #footer{
-     background-color: #0D0030;
      padding-bottom: 2%;
      padding-top: 10%;
  }
 
- /* @media (max-width: 768px) { 
-    #computerImage{
-        width: 200px;
-    }
-    #computerImageShadow{
-        width: 300px;
-    }
-    #rocketImage{
-        width: 200px;
-        left:0;
-    }
-    #rocketImageShadow{
-        width: 300px;
-    }
-} */
+ @keyframes downarrow {
+    0%    { transform: translateY(0); opacity: 0.4 }
+    100%  { transform: translateY(1.0em); opacity: 0.6 }
+}
+
+.down {
+    animation: downarrow 1s infinite alternate ease-in-out;
+  }

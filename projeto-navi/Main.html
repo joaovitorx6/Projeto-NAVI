@@ -3,438 +3,457 @@
     <head>
         <title> Hackathon </title>
         <meta charset="utf-8">  
-        <!-- Boostrap CSS -->
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <!-- Boostrap CSS -->   
         <link rel='stylesheet' href='../node_modules/bootstrap/compiler/bootstrap.css'>
         <!-- Bootstrap icons -->
         <link rel='stylesheet' href='../node_modules/bootstrap-icons/font/bootstrap-icons.css'>
         <!-- CSS Main.css -->
         <link rel="stylesheet" href="main.css">
+         <!-- Main CSS -->
+         <!-- <link rel='stylesheet' href='sassMain.css'> -->
+
     </head>
     <body>
 
-        <nav class='navbar navbar-expand-lg bg-purple ps-5' id='nav'> 
-            <div class='container-fluid'> 
-                <a class='navbar-brand'> 
-                    <img src='src/images/logo-hackaton.png' class='w-75 img-fluid'>
-                </a>
-                <button class='navbar-toggler' type='button'  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"> </span>
-                </button>
-                <div class='collapse navbar-collapse justify-content-center' id="navbarSupportedContent"> 
-                    <ul class='navbar-nav'> 
-                        <li class='nav-item pe-4'> 
-                            <a class='nav-link disabled text-white' href=""> OBJETIVOS </a>
-                        </li>
-                        <li class='nav-item pe-4 ps-4'> 
-                            <a class='nav-link disabled text-white' href='#'> O EVENTO </a>
-                        </li>
-                        <li class='nav-item pe-4 ps-4'> 
-                            <a class='nav-link disabled text-white' href='#'> INSCRIÇÕES </a>
-                        </li>
-                        <li class='nav-item pe-4 ps-4'> 
-                            <a class='nav-link disabled text-white' href='#'> INFORMAÇÕES </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            <nav class='navbar navbar-expand-lg sticky-top shadow bg-purple' id='nav'> 
+    
+                <div class='container'> 
+                    
+                    <a class='navbar-brand'> 
+                        <img src='src/images/logo-hackaton.png' class='w-75 img-fluid'>
+                    </a>
+                    
+                    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-        <section class='container-fluid position-relative bg-purple pt-3 pb-3' id='sectionTitle'> 
-
-            <div class='d-flex justify-content-start'>
-                <img src='src/images/rocket1.png' class='img-fluid position-absolute' id='rocketImage'>
-                <img src='src/images/rocket3.png' class='img-fluid position-absolute' id='rocketImageShadow'>
-            </div>
-            
-            <div class='d-flex justify-content-end'>
-                <img src='src/images/Computer1.png' class='img-fluid position-absolute' id='computerImage'> 
-                <img src='src/images/Computer3.png' class='img-fluid position-absolute' id='computerImageShadow'>
-            </div>
-
-            <div class='container position-relative' id='sectionTitleBox'> 
-
-                <img src='src/images/rocket2.png' class='img-fluid position-absolute' id='rocketImageCenter'>
-
-                <div class='row position-relative'>
-                    <div class='col-md text-center'> 
-                        <p class='text-white' id='titleHackaton'> HACKATHON </p> 
-                        <h4 class=text-info> CAUSA BÁSICA DO ÓBITO </h4>
-                        <p class='text-white fs-5 fst-italic'> Codificar é preciso! </p> 
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent"> 
+                        
+                        <ul class='navbar-nav'> 
+                            <li class='nav-item pe-4'> 
+                                <a class='nav-link text-white' href="#sectionObjective"> OBJETIVOS </a>
+                            </li>
+                            <li class='nav-item pe-4'> 
+                                <a class='nav-link text-white' href='#sectionThree'> O EVENTO </a>
+                            </li>
+                            <li class='nav-item pe-4'> 
+                                <a class='nav-link text-white' href='#sectionParticipe'> INSCRIÇÕES </a>
+                            </li>
+                            <li class='nav-item pe-4'> 
+                                <a class='nav-link text-white' href='#sectionInfo'> INFORMAÇÕES </a>
+                            </li>
+                        </ul>
                     </div>
-                </div>    
-
-            </div> 
-
-            <div class='row position-relative' id='setas'>
-                <div class='col-2'>
-                    <div class='position-absolute' id='seta'> <i class="bi bi-chevron-down" style='font-size: 4rem; color: white'></i> </div> 
-                    <div class='position-absolute' id='seta2'> <i class="bi bi-chevron-down" style='font-size: 4rem; color: white'></i></div>
-                    <div class='position-absolute' id='seta3'> <i class="bi bi-chevron-down" style='font-size: 4rem; color: white'></i> </div>  
+                    
                 </div>
-            </div>
-
-            <div class='container' id='codeBox'> 
-                <div class='row justify-content-center'>
-                    <div class='col-8 p-5 bg-white'>
-                        <h2 class='pb-3' id=''> CODIFICAR É PRECISO! </h2>
-                        <p class='text-justify pb-3'> O objetivo do nosso Hackathon Causa Básica do Óbito é construir soluções 
-                            inovadoras que auxiliem no registro das causas básica de óbitos no Brasil, 
-                            que compõem o Sistema Seletor de Causa Básica de Óbito.
-                        </p>
-                        <div class='row justify-content-center'>
-                            <button type='button' class='col-5 btn btn-warning text-white'> 
-                                QUERO PARTICIPAR!
-                            </button>
+            </nav>
+    
+            <section class='container-fluid position-relative bg-purple pt-3 pb-3' id='sectionTitle'> 
+    
+                <div class='d-flex w-100 justify-container-end'>
+                    <img src='src/images/rocket1.png' class='img-fluid position-absolute' id='rocketImage'>
+                    <img src='src/images/rocket3.png' class='img-fluid position-absolute' id='rocketImageShadow'>
+                </div>
+                
+                <div class='d-flex w-100 justify-content-end'>
+                    <img src='src/images/Computer1.png' class='img-fluid position-absolute' id='computerImage'> 
+                    <img src='src/images/Computer3.png' class='img-fluid position-absolute' id='computerImageShadow'>
+                </div>
+    
+                
+                <img src='src/images/rocket2.png' class='img-fluid position-absolute' id='rocketImageCenter'>
+    
+                <div class='container position-relative' id='sectionTitleBox'> 
+    
+                    <div class='row position-relative'>
+                        <div class='col-md text-center'> 
+                            <p class='text-white' id='titleHackaton'> HACKATHON </p> 
+                            <h4 class='text-bluetitle'> CAUSA BÁSICA DO ÓBITO </h4>
+                            <p class='text-white fs-5 fst-italic'> Codificar é preciso! </p> 
+                        </div>
+                    </div>    
+    
+                </div> 
+    
+                <div class='row position-relative down' id='setas'>
+                    <div class='col-2'>
+                        <div class='position-absolute' id='seta'> <i class="bi bi-chevron-down" style='font-size: 4rem; color: white'></i> </div> 
+                        <div class='position-absolute' id='seta2'> <i class="bi bi-chevron-down" style='font-size: 4rem; color: white'></i></div>
+                        <div class='position-absolute' id='seta3'> <i class="bi bi-chevron-down" style='font-size: 4rem; color: white'></i> </div>  
+                    </div>
+                </div>
+    
+                <div class='container' id='codeBox'> 
+                    <div class='row justify-content-center'>
+                        <div class='col-8 p-5 bg-white'>
+                            <h2 class='pb-3 text-purpletitle'> CODIFICAR É PRECISO! </h2>
+                            <p class='text-justify pb-3'> O objetivo do nosso Hackathon Causa Básica do Óbito é construir soluções 
+                                inovadoras que auxiliem no registro das causas básica de óbitos no Brasil, 
+                                que compõem o Sistema Seletor de Causa Básica de Óbito.
+                            </p>
+                            <div class='d-flex w-100 justify-content-center'>
+                                <div type='button' class='px-5 py-2 text-white bg-orangeb' id='botao'> QUERO ME INSCREVER! </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+    
+            </section>
+    
+            <section class='container-fluid bg-purpletitle p-5' id='sectionObjective'> 
+    
+                <div class='container p-5'> 
+    
+                    <h1 class='pl-3 pb-5 text-white'> OBJETIVOS </h1>
+    
+                    <div class='row justify-content-center'>
+    
+                        <div class='col-lg-4 col-md-12 p-4'> 
+                            <img src='src/images/rocket 1.png' class='pb-2 w-25 img-fluid'>
+                            <h4 class='pb-3 text-white'> Fomento à inovação </h4> 
+                            <p class='text-white'> Desenvolver uma cultura de inovação e criação de novas ideias 
+                                para solucionar problemas presentes em nossa sociedade
+                            </p>
+                        </div>
+                        <div class='col-lg-4 col-md-12 p-4'> 
+                            <img src='src/images/homework.png' class='pb-2 w-25 img-fluid'>
+                            <h4 class='pb-3 text-white'> Fonte de aprendizado </h4>
+                            <p class='text-white'> Oportunidade de aprendizado para todos os participantes, pois cada 
+                                atividade estimula a criatividade e se transforma em conhecimento
+                            </p> 
+                        </div>
+                        <div class='col-lg-4 col-md-12 p-4'> 
+                            <img src='src/images/knowledge 1.png' class='pb-2 w-25 img-fluid'>
+                            <h4 class='pb-3 text-white'> Aceleração de ideias </h4> 
+                            <p class='text-white'> Surgimento de ideias incríveis que poderão se tornarem projetos de grande 
+                                impacto na vida de muitas pessoas direta ou indiretamente.
+                            <p>
+                        </div>
+    
+                        <div class='col-lg-4 col-md-12 p-4'> 
+                            <img src='src/images/Group.png' class='pb-2 w-25 img-fluid'>
+                            <h4 class='pb-3 text-white'> Trabalho em equipe </h4> 
+                            <p class='text-white'> Interação entre participantes de multidisciplinas, 
+                                que poderão trabalhar juntos e aprenderem coisas novas
+                            </p>
+                        </div>
+                        <div class='col-lg-4 col-md-12 p-4'> 
+                            <img src='src/images/Desafio.png' class='pb-2 w-25 img-fluid'>
+                            <h4 class='pb-3 text-white'> Desafio </h4> 
+                            <p class='text-white'> Promover desafios como esse, faz com que jovens e adultos se desafiem 
+                                e possam até mesmo dar o próximo passo em suas carreiras
+                            </p>
+                        </div>
+                        <div class='col-lg-4 col-md-12 p-4'> 
+                            <img src='src/images/Implantacao.png' class='pb-2 w-25 img-fluid'>
+                            <h4 class='pb-4 text-white'> Implementação de projetos </h4> 
+                            <p class='text-white'> Incentivar a implementação de projetos que estão guardados ou 
+                                que precisam ser melhorados
+                            </p>
                         </div>
                     </div>
+    
                 </div> 
-            </div>
+            </section> 
+    
+            <section class='container-fluid position-relative p-5' id='sectionThree'>
 
-        </section>
-
-        <section class='container-fluid p-5' id='sectionObjective'> 
-
-            <div class='container p-5'> 
-
-                <h1 class='pl-3 pb-5 text-white'> OBJETIVOS </h1>
-
-                <div class='row justify-content-center'>
-                    <div class='col-md-4 p-4'> 
-                        <h4 class='pb-3 text-white'> Fomento à inovação </h4> 
-                        <p class='text-white'> Desenvolver uma cultura de inovação e criação de novas ideias 
-                            para solucionar problemas presentes em nossa sociedade
-                        </p>
-                    </div>
-                    <div class='col-md-4 p-4'> 
-                        <img src='src/images/homework.png' class='pb-2 w-25 img-fluid'>
-                        <h4 class='pb-3 text-white'> Fonte de aprendizado </h4>
-                        <p class='text-white'> Oportunidade de aprendizado para todos os participantes, pois cada 
-                            atividade estimula a criatividade e se transforma em conhecimento
-                        </p> 
-                    </div>
-                    <div class='col-md-4 p-4'> 
-                        <h4 class='pb-3 text-white'> Aceleração de ideias </h4> 
-                        <p class='text-white'> Surgimento de ideias incríveis que poderão se tornarem projetos de grande 
-                            impacto na vida de muitas pessoas direta ou indiretamente.
-                        <p>
-                    </div>
-
-                    <div class="w-100"></div>
-
-                    <div class='col-md-4 p-4'> 
-                        <img src='src/images/Group.png' class='pb-2 w-25 img-fluid'>
-                        <h4 class='pb-3 text-white'> Trabalho em equipe </h4> 
-                        <p class='text-white'> Interação entre participantes de multidisciplinas, 
-                            que poderão trabalhar juntos e aprenderem coisas novas
-                        </p>
-                    </div>
-                    <div class='col-md-4 p-4'> 
-                        <img src='src/images/Desafio.png' class='pb-2 w-25 img-fluid'>
-                        <h4 class='pb-3 text-white'> Desafio </h4> 
-                        <p class='text-white'> Promover desafios como esse, faz com que jovens e adultos se desafiem 
-                            e possam até mesmo dar o próximo passo em suas carreiras
-                        </p>
-                    </div>
-                    <div class='col-md-4 p-4'> 
-                        <img src='src/images/Implantacao.png' class='pb-2 w-25 img-fluid'>
-                        <h4 class='pb-4 text-white'> Implementação de projetos </h4> 
-                        <p class='text-white'> Incentivar a implementação de projetos que estão guardados ou 
-                            que precisam ser melhorados
-                        </p>
-                    </div>
+                <div class='w-100'>
+                    <img src='src/images/Computer2.png' class='img-fluid position-absolute end-0 w-50' id='computerSectionFases'> 
                 </div>
-
-            </div> 
-        </section> 
-
-        <section class='container-fluid position-relative p-5' id='sectionThree'>
-            
-            <div class='d-flex w-100'>
-                <img src='src/images/Computer2.png' class='img-fluid position-absolute end-0 w-50' id='computerSectionFases'> 
-            </div>
-            
-            <!-- <div class="position-relative m-4">
-                <div class="progress" style="height: 5px;">
-                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;"></button>
-                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;"></button>
-                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;"></button>
-            </div>
-             -->
-            <div class='row justify-content-start p-5'>
-
-                <h1 class='pb-5'> FASES DO EVENTO </h1>
-
-                <div class='ps-5 pt-5 pb-5 col-6'>
-                    <h3> PERÍODO DE INSCRIÇÕES </h3>
-                    <p class='fs-5 fw-bolder text-info'> 02/11/2020 a 09/11/2020 </p>
-                    <p>
-                        Para se inscrever, é preciso preencher o formulário de inscrição, onde poderão 
-                        participar equipes de 4 (quatro) membros, devendo ser organizadas preferencialmente 
-                        da seguinte forma: 
-                        - 1x Perfil Business, 2x Hackers (Desenvolvedores) e 1x UX/UI (Design).
-                    </p> 
-                    <p> <spam class='fw-bolder'> Obs: </spam> Os membros da equipe deverão estar com matrícula ativa em instituição 
-                        pública ou privada de ensino, em nível de curso técnico ou graduação.
-                    </p> 
-                    <p> <spam class='fw-bolder'> Canal para dúvidas: </spam> hackathon@navi.ifrn.edu.br
-                    </p> 
-                    <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> INSCREVA-SE AQUI! </a>
-                </div>
-
-                <div class='w-100'> </div>
-
-                <div class='ps-5 pb-5 pt-5 col-6 mt-5 position-relative'>
-
-                    <h3> LIVE DE ABERTURA </h3>
-                    <p class='fs-5 fw-bolder text-info'> 14/11/2020 às 20h </p>
-                    <p>
-                        Live que dará início ao evento. Já marque em sua agenda para não esquecer! 
-                    </p> 
-                </div>
-
-                <div class='w-100'> </div>
-
-                <div class='ps-5 pb-5 pt-5 col-6'>
-                    <h3> Etapa 1: Brainstorming e Ideação </h3>
-                    <p class='fs-5 fw-bolder text-info'> 14/11/2020 a 19/11/2020 </p>
-                    <p>
-                        A equipe participante deverá enviar um link de vídeo (ex: youtube) por meio do link abaixo. 
-                        O vídeo deve ser em formato de pitch com duração de até 3min descrevendo a proposta de solução.
-                    </p>
-                    <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> ENVIAR PROPOSTA </a>
-                </div>
-
-                <div class='w-100'> </div>
-
-                <div class='ps-5 pb-5 pt-5 col-6'>
-                    <h3> Resultado da Etapa 1: Brainstorming e Ideação </h3>
-                    <p class='fs-5 fw-bolder text-info'> 23/11/2020 </p>
-                    <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> RESULTADO ETAPA 1 </a>
-                </div>
-
-                <div class='w-100'> </div>
-
-                <div class='ps-5 pb-5 pt-5 col-6'>
-                    <h3> Etapa 2: Prototipação da solução </h3>
-                    <p class='fs-5 fw-bolder text-info'> 21/11/2020 a 26/11/2020 </p>
-                    <p>
-                        A equipe participante deverá produzir um protótipo de média fidelidade e enviar um 
-                        link de vídeo (ex: youtube) por meio do link abaixo. 
-                        O vídeo deve ter duração de até 2min explicando o protótipo desenvolvido.
-                    </p>
-                    <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> ENVIAR APRESENTAÇÃO </a>
-                </div>
-
-                <div class='w-100'> </div>
-
-                <div class='ps-5 pb-5 pt-5 col-6'>
-                    <h3> Resultado da Etapa 2: Prototipação da solução </h3>
-                    <p class='fs-5 fw-bolder text-info'> 28/11/2020 </p>
-                    <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> RESULTADO ETAPA 2 </a>
-                </div>
-
-                <div class='w-100'> </div>
-
-                <div class='ps-5 pb-5 pt-5 col-6'>
-                    <h3> Etapa Final: Apresentação do MVP e Premiação </h3>
-                    <p class='fs-5 fw-bolder text-info'> 30/11/2020 </p>
-                    <p>
-                        A equipe participante deverá enviar um link de vídeo (ex: youtube) por meio do link abaixo. 
-                        O vídeo deve ser em formato de pitch e ter duração de até 2min explicando o MVP (Produto Mínimo Viável). 
-                        Além disso, deve também disponibilizar os arquivos da solução 
-                        proposta através de pastas na nuvem (ex: github, google drive...).
-                    </p> 
-                    <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> ENVIAR PROJETO  </a>
-                </div>
-            </div>
-        </section> 
-
-        <section class='bg-purple' id='sectionPremios'> 
-            
-            <div class='container position-relative'>
-
-                <h1 class='pb-5 text-white'> PRÊMIOS INCRÍVEIS </h1>
-
-                <div class='d-flex justify-content-center'> 
-                    <img src='src/images/premios.png' class='position-absolute img-fluid' id='computerSectionPremios'>
-                </div>
-
-                <div class='row justify-content-center'>
-
-                    <div class='col text-center'>
-                        <h3 class='text-white'> 1º Lugar </h3>
-                        <h4> R$ 4.000,00 </h4>
-                    </div>  
-            
-                </div>
-
-                <div class='row justify-content-center' style='margin-top: 15%;'>
-
-                    <div class='col-6 text-center'>
-                        <h3 class='text-white'> 3º Lugar </h3>
-                        <h4> R$ 1.000,00 </h4>
-                    </div> 
-                    
-
-                    <div class='col-6 text-center'>
-                        <h3 class='text-white'> 2º Lugar </h3>
-                        <h4> R$ 2.000,00 </h4>
-                    </div>  
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class='p-5' id='sectionInfo'> 
-
-            <div class='container'> 
-
-                <div class='row justify-content-center'> 
-                    <h1 class='pb-5'> INFORMAÇÕES DE APOIO </h1>
-
-                    <div class='col-md-5 pb-5'>
-                        <h3 class='pb-2'> Introdução à Causa Básica do Óbito </h3> 
-                        <p class='pb-2'> 
-                            Todos os dias milhares de mortes são registradas no Brasil. Para simplificar o registro desses óbitos, 
-                            foi criado o sistema de Codificação das Causas Básicas do Óbito. 
-                            Ele serve para que seja possível identificar a causa primária da morte de uma pessoa, como por exemplo 
-                            uma doença ou uma arma.
-                            Dessa forma, a utilização da codificação do óbito se amplia exponencialmente e é identificada como uma demanda 
-                            permanente do sistema 
-                            de saúde. Sendo natural que a codificação do óbito passe a ser uma tarefa institucional primordial a ser assumida organicamente pelo Sistema Único de Saúde.
-                        </p> 
-                        <h3 class='pb-2'> Objetivo </h3>
-                        <p class='pb-2'> 
-                            Construir soluções inovadoras que auxiliem na codificação da causa básica do óbito que compõem o Sistema 
-                            Seletor de Causa Básica de Óbito.
-                        </p>
-                        <h3 class='pb-2'> Regulamento do evento </h3> 
-                        <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> CONFERIR REGULAMENTO COMPLETO </a>
-                    </div>
-
-                    <div class='col-md-1'></div>
-
-                    <div class='col-md-5'>
-                        <h3 class='pb-2'> Eixos temáticos </h3>
-                        <p class='pb-2'> 
-                            <span class='fw-bolder'> 1 - Tecnologias para melhoramento na codificação da causa básica do óbito: </span>
-                            Propor soluções inovadoras que auxiliem a codificação da causa do óbito, incluindo 
-                            validação da codificação especificada e propor a codificação mais acurada da CBO se necessário. 
-                        </p>
-                        <p class='pb-2'>
-                            <span class='fw-bolder'> 2 - Desenvolvimento de Sistemas de Recomendação em CBO: </span>
-                            Propor sistemas de recomendação baseados em histórico de codificação da causa do óbito, que atuem 
-                            como assistentes virtuais dos profissionais em CBO, a partir de modelos preditivos especializados na 
-                            Classificação Internacional de Doenças e Problemas Relacionados à Saúde (CID-10).
-                        </p>
-                        <p class='pb-2'>
-                            <span class='fw-bolder'> 3 - Tecnologias para Treinamento de Profissionais em CBO: </span>
-                            Propor recursos educacionais abertos que auxiliem no processo de formação dos 
-                            profissionais em CBO, incluindo simuladores da codificação de DO “Declaração de 
-                            óbito”, jogos sérios ou objetivos de aprendizagem como foco em codificação da causa 
-                            básica do óbito.
-                        </p>
-                        <p class='pb-2'> 
-                            A declaração de óbito é composta por campos informativos como Idade, Sexo, setor laboral, e 
-                            pricipalmente doenças ou agravos que levaram a pessoa ao óbito. Este último é chamado Bloco V, é 
-                            dele que o codificador retira as informações necessária para codificar a causa básica do óbito. 
-                        </p>
-                        <p class='pb-2'> 
-                            Aqui pretende-se buscar tecnologia que simula esse processo de codificação e auxilie a memorização das 
-                            regras.
-                        </p>
-                    </div>
-
-                </div>
-            </div> 
-        </section>
-
-        <section class='p-5' id='sectionComissao'> 
-
-            <div class='container p-5'>
                 
-                <h1 class='pb-5'> COMISSÃO ORGANIZADORA </h1>
-
-                <div class='row justify-content-center text-center'>
-                    <div class='col-md pb-5'> 
-                        <img class='w-75 pb-3 img-fluid rounded' src='src/images/aldiney-image.png'>
-                        <h6> Aldiney Doreto </h6>  
-                    </div>
-                    <div class='col-md pb-5'> 
-                        <img class='w-75 pb-3 img-fluid rounded' src='src/images/janaina-image.png'>
-                        <h6> Janaina Rodrigues </h6>  
-                    </div>
-                    <div class='col-md pb-5'> 
-                        <img class='w-75 pb-3 img-fluid rounded' src='src/images/joaopaulo-image.png'>
-                        <h6> João Paulo Q. dos Santos </h6>  
-                    </div>
-                    <div class='col-md pb-5'> 
-                        <img class='w-75 pb-3 img-fluid rounded' src='src/images/fernandolopes-image.png'>
-                        <h6> Fernando L. de Oliveira Farias </h6>  
-                    </div>
-                    <div class='col-md pb-5'> 
-                        <img class='w-75 pb-3 img-fluid rounded' src='src/images/melise.png'>
-                        <h6> Melise C. Duarte de Almeida </h6> 
-                    </div>
-                    <div class='col-md pb-5'> 
-                        <img class='w-75 pb-3 img-fluid rounded' src='src/images/mauriciocapra-image.png'>
-                        <h6> Mauricio Capra </h6>  
-                    </div>
-                </div>
-            </div>
-
-        </section> 
-
-        <section class='p-5' id='sectionParticipe'> 
-            <div class='container'>
-                <div class='row justify-content-center'>
-                    <div class='col-md-6'>
-                        <h1 class='pb-3'> PARTICIPE! </h1> 
-                        <h5 class='pb-2'> Fique ligado(a) nas regras </h5> 
-                        <p class='fs-5 pb-2 fw-bolder text-info'> Inscrições de 02/11/2020 a 09/11/2020 </p>
-                        <p class='pb-2'> Para se inscrever, é preciso preencher o formulário de inscrição, 
-                            onde poderão participar equipes de 4 (quatro) membros, devendo ser organizadas 
-                            preferencialmente da seguinte forma: - 1x Perfil Business, 2x Hackers (Desenvolvedores) 
-                            e 1x UX/UI (Design). 
-                        </p>
-                        <p class='pb-2'>
-                            <span class='fw-bolder'> Obs: </span> Os membros da equipe deverão estar com matrícula ativa em instituição pública ou 
-                            privada de ensino, em nível de curso técnico ou graduação.
+                <div class='row justify-content-start p-5'>
+    
+                    <h1 class='pb-5 text-purple'> FASES DO EVENTO </h1>
+    
+                    <div class='ps-5 pt-5 pb-5 col-lg-6 col-md-12'>
+                        <h3> PERÍODO DE INSCRIÇÕES </h3>
+                        <h6 class='fw-bolder pb-3 text-bluetitle'> 02/11/2020 a 09/11/2020 </h6>
+                        <p>
+                            Para se inscrever, é preciso preencher o formulário de inscrição, onde poderão 
+                            participar equipes de 4 (quatro) membros, devendo ser organizadas preferencialmente 
+                            da seguinte forma: 
+                            - 1x Perfil Business, 2x Hackers (Desenvolvedores) e 1x UX/UI (Design).
                         </p> 
-                        <p class='pb-2'>
-                            <span class='fw-bolder'> Canal para dúvidas: </span> hackathon@navi.ifrn.edu.br 
+                        <p> <spam class='fw-bolder'> Obs: </spam> Os membros da equipe deverão estar com matrícula ativa em instituição 
+                            pública ou privada de ensino, em nível de curso técnico ou graduação.
+                        </p> 
+                        <p> <spam class='fw-bolder'> Canal para dúvidas: </spam> hackathon@navi.ifrn.edu.br
+                        </p> 
+                        <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> INSCREVA-SE AQUI! </a>
+                    </div>
+    
+                    <div class='w-100'> </div>
+    
+                    <div class='ps-5 pb-5 pt-5 col-lg-6 col-md-12 mt-5 position-relative'>
+    
+                        <h3> LIVE DE ABERTURA </h3>
+                        <h6 class='fw-bolder pb-3 text-bluetitle'> 14/11/2020 às 20h </h6>
+                        <p>
+                            Live que dará início ao evento. Já marque em sua agenda para não esquecer! 
+                        </p> 
+                    </div>
+    
+                    <div class='w-100'> </div>
+    
+                    <div class='ps-5 pb-5 pt-5 col-lg-6 col-md-12'>
+                        <h3> Etapa 1: Brainstorming e Ideação </h3>
+                        <h6 class='fw-bolder pb-3 text-bluetitle'> 14/11/2020 a 19/11/2020 </h6>
+                        <p>
+                            A equipe participante deverá enviar um link de vídeo (ex: youtube) por meio do link abaixo. 
+                            O vídeo deve ser em formato de pitch com duração de até 3min descrevendo a proposta de solução.
                         </p>
+                        <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> ENVIAR PROPOSTA </a>
                     </div>
-                    <div class='col-md-5'>
-                        <img src='src/images/rocket1.png' class='img-fluid'>
-                        <button type='button' class='btn btn-warning text-white'> QUERO ME INSCREVER! </button>
+    
+                    <div class='w-100'> </div>
+    
+                    <div class='ps-5 pb-5 pt-5 col-lg-6 col-md-12'>
+                        <h3> Resultado da Etapa 1: Brainstorming e Ideação </h3>
+                        <h6 class='fw-bolder pb-3 text-bluetitle'> 23/11/2020 </h6>
+                        <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> RESULTADO ETAPA 1 </a>
+                    </div>
+    
+                    <div class='w-100'> </div>
+    
+                    <div class='ps-5 pb-5 pt-5 col-lg-6 col-md-12'>
+                        <h3> Etapa 2: Prototipação da solução </h3>
+                        <h6 class='fw-bolder pb-3 text-bluetitle'> 21/11/2020 a 26/11/2020 </h6>
+                        <p>
+                            A equipe participante deverá produzir um protótipo de média fidelidade e enviar um 
+                            link de vídeo (ex: youtube) por meio do link abaixo. 
+                            O vídeo deve ter duração de até 2min explicando o protótipo desenvolvido.
+                        </p>
+                        <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> ENVIAR APRESENTAÇÃO </a>
+                    </div>
+    
+                    <div class='w-100'> </div>
+    
+                    <div class='ps-5 pb-5 pt-5 col-lg-6 col-md-12'>
+                        <h3> Resultado da Etapa 2: Prototipação da solução </h3>
+                        <h6 class='fw-bolder pb-3 text-bluetitle'> 28/11/2020 </h6>
+                        <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> RESULTADO ETAPA 2 </a>
+                    </div>
+    
+                    <div class='w-100'> </div>
+    
+                    <div class='ps-5 pb-5 pt-5 col-lg-6 col-md-12'>
+                        <h3> Etapa Final: Apresentação do MVP e Premiação </h3>
+                        <h6 class='fw-bolder pb-3 text-bluetitle'> 30/11/2020 </h6>
+                        <p>
+                            A equipe participante deverá enviar um link de vídeo (ex: youtube) por meio do link abaixo. 
+                            O vídeo deve ser em formato de pitch e ter duração de até 2min explicando o MVP (Produto Mínimo Viável). 
+                            Além disso, deve também disponibilizar os arquivos da solução 
+                            proposta através de pastas na nuvem (ex: github, google drive...).
+                        </p> 
+                        <a class='text-info fw-bolder'> <i class="bi bi-box-arrow-up-right"></i> ENVIAR PROJETO  </a>
                     </div>
                 </div>
-            </div>
-        </section> 
-
-        <footer id='footer'>
-            <div class='container pb-5'>
-                <div class='row justify-content-center'>
-                    <div class='col-md pb-5'>
-                        <img src='src/images/logonavi.png' class='img-fluid'>
+            </section> 
+    
+            <section class='bg-purple position-relative' id='sectionPremios'> 
+    
+                <img src='src/images/CBO.png' class='position-absolute me-5 end-0 top-0 img-fluid'> 
+    
+                <div class='container position-relative'>
+    
+                    <h1 class='pb-5 text-white'> PRÊMIOS INCRÍVEIS </h1>
+    
+                    <div class='d-flex justify-content-center'> 
+                        <img src='src/images/premios.png' class='position-absolute img-fluid' id='computerSectionPremios'>
                     </div>
-                    <div class='col-md pb-5'>
-                        <img src='src/images/logofuncern.png' class='img-fluid'>
+    
+                    <div class='row justify-content-center'>
+    
+                        <div class='col text-center'>
+                            <h3 class='text-white'> 1º Lugar </h3>
+                            <h4 class='text-bluetitle'> R$ 4.000,00 </h4>
+                        </div>  
+                
                     </div>
-                    <div class='col-md pb-5'>
-                        <img src='src/images/logocbo.png' class='img-fluid'>
+    
+                    <div class='row justify-content-center' style='margin-top: 15%;'>
+    
+                        <div class='col-6 text-center'>
+                            <h3 class='text-white'> 3º Lugar </h3>
+                            <h4 class='text-bluetitle'> R$ 1.000,00 </h4>
+                        </div> 
+                        
+    
+                        <div class='col-6 text-center'>
+                            <h3 class='text-white'> 2º Lugar </h3>
+                            <h4 class='text-bluetitle'> R$ 2.000,00 </h4>
+                        </div>  
+    
+                    </div>
+    
+                </div>
+    
+            </section>
+    
+            <section class='p-5' id='sectionInfo'> 
+    
+                <div class='container mt-5'> 
+    
+                    <div class='row justify-content-center'> 
+    
+                        <h1 class='pb-5'> INFORMAÇÕES DE APOIO </h1>
+    
+                        <div class='col-lg-5 col-md-12 pb-5'>
+                            <h3 class='pb-2 text-bluetitle'> Introdução à Causa Básica do Óbito </h3> 
+                            <p class='pb-2'> 
+                                Todos os dias milhares de mortes são registradas no Brasil. Para simplificar o registro desses óbitos, 
+                                foi criado o sistema de Codificação das Causas Básicas do Óbito. 
+                                Ele serve para que seja possível identificar a causa primária da morte de uma pessoa, como por exemplo 
+                                uma doença ou uma arma.
+                                Dessa forma, a utilização da codificação do óbito se amplia exponencialmente e é identificada como uma demanda 
+                                permanente do sistema 
+                                de saúde. Sendo natural que a codificação do óbito passe a ser uma tarefa institucional primordial a ser assumida organicamente pelo Sistema Único de Saúde.
+                            </p> 
+                            <h3 class='pb-2 text-bluetitle'> Objetivo </h3>
+                            <p class='pb-2'> 
+                                Construir soluções inovadoras que auxiliem na codificação da causa básica do óbito que compõem o Sistema 
+                                Seletor de Causa Básica de Óbito.
+                            </p>
+                            <h3 class='pb-2 text-bluetitle'> Regulamento do evento </h3> 
+                            <a class='fw-bolder text-orangeb'> <i class="bi bi-box-arrow-up-right"></i> CONFERIR REGULAMENTO COMPLETO </a>
+                        </div>
+    
+                        <div class='col-lg-1'></div>
+    
+                        <div class='col-lg-5 col-md-12'>
+                            <h3 class='pb-2 text-bluetitle'> Eixos temáticos </h3>
+                            <p class='pb-2'> 
+                                <span class='fw-bolder'> 1 - Tecnologias para melhoramento na codificação da causa básica do óbito: </span>
+                                Propor soluções inovadoras que auxiliem a codificação da causa do óbito, incluindo 
+                                validação da codificação especificada e propor a codificação mais acurada da CBO se necessário. 
+                            </p>
+                            <p class='pb-2'>
+                                <span class='fw-bolder'> 2 - Desenvolvimento de Sistemas de Recomendação em CBO: </span>
+                                Propor sistemas de recomendação baseados em histórico de codificação da causa do óbito, que atuem 
+                                como assistentes virtuais dos profissionais em CBO, a partir de modelos preditivos especializados na 
+                                Classificação Internacional de Doenças e Problemas Relacionados à Saúde (CID-10).
+                            </p>
+                            <p class='pb-2'>
+                                <span class='fw-bolder'> 3 - Tecnologias para Treinamento de Profissionais em CBO: </span>
+                                Propor recursos educacionais abertos que auxiliem no processo de formação dos 
+                                profissionais em CBO, incluindo simuladores da codificação de DO “Declaração de 
+                                óbito”, jogos sérios ou objetivos de aprendizagem como foco em codificação da causa 
+                                básica do óbito.
+                            </p>
+                            <p class='pb-2'> 
+                                A declaração de óbito é composta por campos informativos como Idade, Sexo, setor laboral, e 
+                                pricipalmente doenças ou agravos que levaram a pessoa ao óbito. Este último é chamado Bloco V, é 
+                                dele que o codificador retira as informações necessária para codificar a causa básica do óbito. 
+                            </p>
+                            <p class='pb-2'> 
+                                Aqui pretende-se buscar tecnologia que simula esse processo de codificação e auxilie a memorização das 
+                                regras.
+                            </p>
+                        </div>
+    
+                    </div>
+                </div> 
+            </section>
+    
+            <section class='p-5 bg-grayb' id='sectionComissao'> 
+    
+                <div class='container p-5'>
+                    
+                    <h1 class='pb-5'> COMISSÃO ORGANIZADORA </h1>
+    
+                    <div class='row justify-content-center text-center'>
+                        <div class='col-lg-2 col-md-6 pb-5'> 
+                            <img class='w-75 pb-3 img-fluid rounded' src='src/images/aldiney-image.png'>
+                            <h6 class='text-purpletitle'> Aldiney Doreto </h6>  
+                        </div>
+                        <div class='col-lg-2 col-md-6 pb-5'> 
+                            <img class='w-75 pb-3 img-fluid rounded' src='src/images/janaina-image.png'>
+                            <h6 class='text-purpletitle'> Janaina Rodrigues </h6>  
+                        </div>
+                        <div class='col-lg-2 col-md-6 pb-5'> 
+                            <img class='w-75 pb-3 img-fluid rounded' src='src/images/joaopaulo-image.png'>
+                            <h6 class='text-purpletitle'> João Paulo Q. dos Santos </h6>  
+                        </div>
+                        <div class='col-lg-2 col-md-6 pb-5'> 
+                            <img class='w-75 pb-3 img-fluid rounded' src='src/images/fernandolopes-image.png'>
+                            <h6 class='text-purpletitle'> Fernando L. de Oliveira Farias </h6>  
+                        </div>
+                        <div class='col-lg-2 col-md-6 pb-5'> 
+                            <img class='w-75 pb-3 img-fluid rounded' src='src/images/melise.png'>
+                            <h6 class='text-purpletitle'> Melise C. Duarte de Almeida </h6> 
+                        </div>
+                        <div class='col-lg-2 col-md-6 pb-5'> 
+                            <img class='w-75 pb-3 img-fluid rounded' src='src/images/mauriciocapra-image.png'>
+                            <h6 class='text-purpletitle'> Mauricio Capra </h6>  
+                        </div>
                     </div>
                 </div>
-            </div>
-            <p class='pt-5 text-center text-white'> 
-                © 2020 Núcleo Avançado de Inovação Tecnológica, Todos os Direitos Reservados 
-            </p> 
-        </footer> 
+    
+            </section> 
+    
+            <section class='p-5' id='sectionParticipe'> 
+                <div class='container'>
+    
+                    <div class='row justify-content-center'>
+    
+                        <div class='col-lg-6 col-md-12'>
+                            <h1 class='pb-3'> PARTICIPE! </h1> 
+                            <h4 class='pb-2'> Fique ligado(a) nas regras </h4> 
+                            <h6 class='fs-5 pb-4 fw-bolder text-bluetitle'> Inscrições de 02/11/2020 a 09/11/2020 </h6>
+                            <p class='pb-2'> Para se inscrever, é preciso preencher o formulário de inscrição, 
+                                onde poderão participar equipes de 4 (quatro) membros, devendo ser organizadas 
+                                preferencialmente da seguinte forma: - 1x Perfil Business, 2x Hackers (Desenvolvedores) 
+                                e 1x UX/UI (Design). 
+                            </p>
+                            <p class='pb-2'>
+                                <span class='fw-bolder'> Obs: </span> Os membros da equipe deverão estar com matrícula ativa em instituição pública ou 
+                                privada de ensino, em nível de curso técnico ou graduação.
+                            </p> 
+                            <p class='pb-2'>
+                                <span class='fw-bolder'> Canal para dúvidas: </span> hackathon@navi.ifrn.edu.br 
+                            </p>
+                            <i class="bi bi-instagram" style='font-size:1.5em;'></i>
+                            <i class="bi bi-facebook" style='font-size:1.5em;'></i>
+                        </div>
+    
+                        <div class='col-lg-6 col-sm-12 position-relative'>
+                            <img src='src/images/rocket1.png' class='img-fluid'>
+                            <div class='d-flex w-100 justify-content-start position-relative'>
+                                <div type='button' class='px-5 py-2 text-white bg-orangeb' style='' id='botao'> QUERO ME INSCREVER! </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </section> 
+    
+            <footer id='footer' class='bg-purple'>
+                <div class='container pb-5'>
+                    <div class='row justify-content-center'>
+                        <div class='col-lg-3 col-sm-6 pb-5'>
+                            <img src='src/images/logonavi.png' class='img-fluid'>
+                        </div>
+                        <div class='col-lg-3 col-sm-6 pb-5'>
+                            <img src='src/images/logo-if.png' class='img-fluid'>
+                        </div>
+                        <div class='col-lg-3 col-sm-6 pb-5'>
+                            <img src='src/images/logofuncern.png' class='img-fluid'>
+                        </div>
+                        <div class='col-lg-3 col-sm-6 pb-5'>
+                            <img src='src/images/logocbo.png' class='img-fluid'>
+                        </div>
+                    </div>
+                </div>
+                <p class='pt-5 text-center text-white'> 
+                    © 2020 Núcleo Avançado de Inovação Tecnológica, Todos os Direitos Reservados 
+                </p> 
+            </footer>
 
-    </body>
+    </body> 
 </html>
